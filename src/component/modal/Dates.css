@@ -1,0 +1,19 @@
+.mainDiv {
+  display: flex !important;
+  justify-content: space-between;
+  background-color: #3a3b3c !important;
+}
+
+.times {
+  font-size: 40px !important;
+  font-weight: 750 !important;
+  color: white;
+}
+
+.Days {
+  color: white;
+  padding-right: 30px;
+  font-size: 20px !important;
+  font-weight: 550 !important;
+  font-family: Roboto !important;
+}

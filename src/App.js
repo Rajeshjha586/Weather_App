@@ -1,23 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Header from "./component/header/Header.jsx";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import "./App.css";
+import WeatherListing from "./component/weatherListing/WeatherListing.jsx";
+import WeatherDetails from "./component/weather-details/Weather-Details.jsx";
+import ModalNotification from "./component/modal/ModalNotification.jsx";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Router>
+        <Header />
+        <ModalNotification />
+        <Switch>
+          <Route path="/" exact component={WeatherListing} />
+          <Route path="/weather/:id" exact component={WeatherDetails} />
+          <Route>OOPs.. 404! Page Not Found</Route>
+        </Switch>
+      </Router>
     </div>
   );
 }

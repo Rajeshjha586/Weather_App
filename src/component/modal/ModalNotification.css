@@ -1,0 +1,14 @@
+.modal-title {
+  padding-left: 150px !important;
+  font-weight: 300 !important;
+}
+
+.weather-info {
+  background-color: white !important;
+}
+
+.weather-info > img {
+  max-width: 20px !important;
+  max-height: 20px !important;
+  border-radius: 50% !important;
+}

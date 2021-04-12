@@ -1,0 +1,18 @@
+.header {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  align-self: center;
+  background-color: #00804a;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  font-family: "Roboto";
+}
+
+.h1 {
+  font-size: 25px !important;
+  font-weight: 500 !important;
+  color: white !important;
+  margin-left: 30px !important;
+}
